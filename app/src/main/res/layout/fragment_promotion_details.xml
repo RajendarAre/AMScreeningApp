@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/featuredImg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></ImageView>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:lineSpacingExtra="3dp"
+            android:maxLines="2"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="#00000c"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#00000c" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="5dp">
+
+        <Button
+            android:id="@+id/promotion_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
+
+        <TextView
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/promotion_button"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
