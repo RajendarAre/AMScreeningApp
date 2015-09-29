@@ -7,10 +7,12 @@ import android.widget.ListView;
 
 import junit.framework.Assert;
 
-import screening.tm.android.com.amscreeningapp.fragment.MainActivityFragment;
+import screening.tm.android.com.amscreen.MainActivity;
+import screening.tm.android.com.amscreen.R;
+import screening.tm.android.com.amscreen.fragment.MainActivityFragment;
 
 /**
- * Created by Rajendar on 9/29/15.
+ * Created by Rajendar Are on 9/29/15.
  */
 public class MainActivityTests extends ActivityInstrumentationTestCase2<MainActivity> {
     public MainActivityTests() {

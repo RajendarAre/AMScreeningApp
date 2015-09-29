@@ -1,4 +1,4 @@
-package screening.tm.android.com.amscreeningapp.fragment;
+package screening.tm.android.com.amscreen.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -13,10 +13,10 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
-import screening.tm.android.com.amscreeningapp.MainActivity;
-import screening.tm.android.com.amscreeningapp.R;
-import screening.tm.android.com.amscreeningapp.model.ButtonPojo;
-import screening.tm.android.com.amscreeningapp.model.Promotions;
+import screening.tm.android.com.amscreen.MainActivity;
+import screening.tm.android.com.amscreen.R;
+import screening.tm.android.com.amscreen.model.ButtonPojo;
+import screening.tm.android.com.amscreen.model.Promotions;
 
 /**
  * Created by Rajendar Are on 9/28/15.
@@ -32,6 +32,8 @@ public class PromotionDetailsFragment extends Fragment implements View.OnClickLi
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.fragment_promotion_details, container, false);
+
+        getActivity().setTitle("Promotion Details");
 
         mPromotions = (Promotions) getArguments().getSerializable("promotion");
         mPromotionButton = (Button) view.findViewById(R.id.promotion_button);

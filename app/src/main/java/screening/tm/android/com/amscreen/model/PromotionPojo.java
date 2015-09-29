@@ -1,4 +1,4 @@
-package screening.tm.android.com.amscreeningapp.model;
+package screening.tm.android.com.amscreen.model;
 
 /**
  * Created by Rajendar Are on 9/28/15.

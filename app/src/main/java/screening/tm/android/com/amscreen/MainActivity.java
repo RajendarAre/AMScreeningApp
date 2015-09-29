@@ -1,4 +1,4 @@
-package screening.tm.android.com.amscreeningapp;
+package screening.tm.android.com.amscreen;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import screening.tm.android.com.amscreeningapp.fragment.MainActivityFragment;
+import screening.tm.android.com.amscreen.fragment.MainActivityFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,9 +16,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         MainActivityFragment mainActivityFragment = new MainActivityFragment();
-        addFragment(mainActivityFragment,"main");
+        addFragment(mainActivityFragment, "main");
     }
 
 
@@ -48,7 +47,13 @@ public class MainActivity extends AppCompatActivity {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.add(R.id.fragment_container, fragment,tag);
-
+        fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
     }
 }

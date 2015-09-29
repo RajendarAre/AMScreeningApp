@@ -1,4 +1,4 @@
-package screening.tm.android.com.amscreeningapp.model;
+package screening.tm.android.com.amscreen.model;
 
 import java.io.Serializable;
 

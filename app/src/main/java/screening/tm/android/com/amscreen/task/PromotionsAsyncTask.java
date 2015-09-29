@@ -1,4 +1,4 @@
-package screening.tm.android.com.amscreeningapp.task;
+package screening.tm.android.com.amscreen.task;
 
 import android.content.Context;
 import android.os.AsyncTask;
@@ -19,9 +19,9 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-import screening.tm.android.com.amscreeningapp.listeners.PromotionLoadListener;
-import screening.tm.android.com.amscreeningapp.model.ButtonPojo;
-import screening.tm.android.com.amscreeningapp.model.Promotions;
+import screening.tm.android.com.amscreen.listeners.PromotionLoadListener;
+import screening.tm.android.com.amscreen.model.ButtonPojo;
+import screening.tm.android.com.amscreen.model.Promotions;
 
 /**
  * Created by Rajendar Are on 9/28/15.
@@ -88,19 +88,18 @@ public class PromotionsAsyncTask extends AsyncTask<String, Void, List<Promotions
                 ButtonPojo[] buttonPojoArray = new Gson().fromJson(rowJSONArray.toString(), ButtonPojo[].class);
                 promotions.setButtonPojoArray(buttonPojoArray);
             }
-            String description = row.getString("description");
+            final String description = row.getString("description");
             if (row.has("footer")) {
-                String footer = row.getString("footer");
+                final String footer = row.getString("footer");
                 promotions.setFooter(footer);
             }
             if (row.has("image")) {
-                String image = row.getString("image");
+                final String image = row.getString("image");
                 promotions.setImage(image);
             }
-            String title = row.getString("title");
+            final String title = row.getString("title");
 
             promotions.setTitle(title);
-
 
             promotions.setDescription(description);
 

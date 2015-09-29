@@ -1,4 +1,4 @@
-package screening.tm.android.com.amscreeningapp.adapter;
+package screening.tm.android.com.amscreen.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,11 +12,11 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-import screening.tm.android.com.amscreeningapp.R;
-import screening.tm.android.com.amscreeningapp.model.Promotions;
+import screening.tm.android.com.amscreen.R;
+import screening.tm.android.com.amscreen.model.Promotions;
 
 /**
- * Created by vivekkumar on 9/28/15.
+ * Created by Rajendar Are on 9/28/15.
  */
 public class PromotionsAdapter extends BaseAdapter{
 

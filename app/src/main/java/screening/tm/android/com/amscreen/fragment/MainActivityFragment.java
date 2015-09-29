@@ -1,4 +1,4 @@
-package screening.tm.android.com.amscreeningapp.fragment;
+package screening.tm.android.com.amscreen.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -10,12 +10,12 @@ import android.widget.ListView;
 
 import java.util.List;
 
-import screening.tm.android.com.amscreeningapp.MainActivity;
-import screening.tm.android.com.amscreeningapp.R;
-import screening.tm.android.com.amscreeningapp.adapter.PromotionsAdapter;
-import screening.tm.android.com.amscreeningapp.listeners.PromotionLoadListener;
-import screening.tm.android.com.amscreeningapp.model.Promotions;
-import screening.tm.android.com.amscreeningapp.task.PromotionsAsyncTask;
+import screening.tm.android.com.amscreen.MainActivity;
+import screening.tm.android.com.amscreen.R;
+import screening.tm.android.com.amscreen.adapter.PromotionsAdapter;
+import screening.tm.android.com.amscreen.listeners.PromotionLoadListener;
+import screening.tm.android.com.amscreen.model.Promotions;
+import screening.tm.android.com.amscreen.task.PromotionsAsyncTask;
 
 /**
  * A placeholder fragment containing a simple view.
@@ -33,7 +33,7 @@ public class MainActivityFragment extends Fragment implements PromotionLoadListe
         final View view = inflater.inflate(R.layout.fragment_main, container, false);
         mPromotionalListView = (ListView) view.findViewById(R.id.promotional_list);
         mPromotionalListView.setOnItemClickListener(this);
-
+        getActivity().setTitle("Promotions List");
         loadPromotionsList();
 
         return view;
