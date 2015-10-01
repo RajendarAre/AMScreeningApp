@@ -2,8 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
     android:orientation="vertical">
+
 
     <RelativeLayout
         android:id="@+id/image_layout"
@@ -14,43 +14,47 @@
         <ImageView
             android:id="@+id/featuredImg"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent" />
+            android:layout_height="fill_parent"
+            android:adjustViewBounds="true" />
 
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="fill_parent"
-            android:layout_height="100dp"
-            android:layout_alignParentBottom="true"
-            android:ellipsize="end"
-            android:gravity="bottom"
-            android:lineSpacingExtra="3dp"
-            android:maxLines="2"
-            android:padding="5dp"
-            android:text=""
-            android:textColor="#00000c"
-            android:textStyle="bold" />
+
     </RelativeLayout>
 
     <TextView
-        android:id="@+id/description"
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/image_layout"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textColor="#00000c"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#00000c" />
+        android:layout_below="@+id/title"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingTop="@dimen/padding_top"
+        android:textColor="#00001a"
+        android:textSize="14.5sp" />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:paddingBottom="5dp">
+        android:paddingBottom="@dimen/padding_bottom">
 
         <Button
             android:id="@+id/promotion_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp" />
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right"
+            android:background="@android:color/darker_gray" />
 
         <TextView
             android:id="@+id/footer"
@@ -59,7 +63,7 @@
             android:layout_below="@+id/promotion_button"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="16dp"
-            android:textColor="#000000" />
+            android:textColor="#00001a" />
 
     </RelativeLayout>
 

@@ -1,5 +1,19 @@
 <resources>
-    <string name="app_name">AMScreeningApp</string>
+    <string name="app_name">AM Screening App</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="please_wait">Please Wait...</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="promotion_view_title">Promotion View</string>
+    <string name="loading">Loading</string>
+    <string name="promotions_list_title">Promotions List</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>Promotions</item>
+
+    </string-array>
+
 </resources>
